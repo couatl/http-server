@@ -8,12 +8,12 @@ Requests for /<directory>/ should be interpreted as requests for DOCUMENT_ROOT/<
 
 """
 
-import os
 import argparse
-import configparser
 import asyncio
+import configparser
+import os
 
-from services.server import Server
+from server import Server
 
 parser = argparse.ArgumentParser(description='Http server.')
 parser.add_argument('-c', '--config', type=str, default='/etc/httpd.conf',
